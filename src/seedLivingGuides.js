@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { LivingGuide } from "./models/livingGuide.model.js";
 
-const MONGO_URI = "process.env.MONGO_URI";
+const MONGO_URI = process.env.MONGO_URI;
 
 const livingGuides = [
   {
