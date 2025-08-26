@@ -4,15 +4,21 @@ export const signUpUser = async (req, res) => {
   try {
     const { fullname, email, password } = req.body;
 
-    const newUser = new User({ fullname, email, password });
+    // Check if email already exists
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+      return res.status(400).json({ message: "Email already registered" });
+    }
 
+    const newUser = new User({ fullname, email, password });
     await newUser.save();
 
     console.log("signup api triggered");
-
-    res.status(200).json({ message: "User registered succesfully", newUser });
+    res.status(200).json({ message: "User registered successfully", newUser });
   } catch (error) {
     console.log(error, "Error while signing up");
+    // send JSON error response so Flutter can show it
+    res.status(500).json({ message: "Internal server error" });
   }
 };
 export const signInUser = async (req, res) => {

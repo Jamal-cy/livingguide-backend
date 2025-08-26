@@ -1,17 +1,14 @@
+import dotenv from "dotenv";
+dotenv.config(); // Load .env first
+
 import app from "./app.js";
 import connectDb from "./config/db.js";
-import dotenv from "dotenv";
 
-// Load environment variables
-dotenv.config();
-
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 // Connect to the database
 connectDb();
 
-// Start the server
-app.listen(port, () => {
-    console.log(`CityGuideApp server is running on http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`LivingGuideApp server is running on http://localhost:${PORT}`);
 });
-
