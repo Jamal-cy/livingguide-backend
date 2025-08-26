@@ -1,22 +1,22 @@
 import mongoose from "mongoose";
 import { LivingGuide } from "./models/livingGuide.model.js";
 
-const MONGO_URI = "mongodb+srv://oluwakemijamal10:Brandy2018@cluster0.q87b5.mongodb.net/livingguide?retryWrites=true&w=majority&appName=LivingGuide";
+const MONGO_URI = "process.env.MONGO_URI";
 
 const livingGuides = [
   {
     title: "☀️ Solar Energy",
     description: "Discover how solar power can reduce costs, cut emissions, and create clean energy for your home.",
-    image: "http://10.0.2.2:4000/images/SolarEnergy.jpg",
+    image: "https://livingguide-backend.onrender.com/images/SolarEnergy.jpg",
     attractions: [
       {
         name: "Solar Panel Basics",
-        image: "http://10.0.2.2:4000/images/Solarpanelbasics.jpg",
+        image: "https://livingguide-backend.onrender.com/images/Solarpanelbasics.jpg",
         description: "Learn how solar panels work, their benefits, and tips for getting started with installation.",
       },
       {
         name: "Inverter Setup",
-        image: "http://10.0.2.2:4000/images/invertersetup.jpg",
+        image: "https://livingguide-backend.onrender.com/images/invertersetup.jpg",
         description: "Set up solar inverters to efficiently convert sunlight into usable home energy.",
       },
     ],
@@ -24,16 +24,16 @@ const livingGuides = [
   {
     title: "💧 Water Conservation",
     description: "Smart ways to save water, cut waste, and protect this vital resource for the future.",
-    image: "http://10.0.2.2:4000/images/waterconservation.jpg",
+    image: "https://livingguide-backend.onrender.com/images/waterconservation.jpg",
     attractions: [
       {
         name: "Rainwater Harvesting",
-        image: "http://10.0.2.2:4000/images/rainwaterharvesting.jpg",
+        image: "https://livingguide-backend.onrender.com/images/rainwaterharvesting.jpg",
         description: "Capture and store rainwater to use for gardening, cleaning, or other household needs.",
       },
       {
         name: "Efficient Faucets",
-        image: "http://10.0.2.2:4000/images/faucets.jpg",
+        image: "https://livingguide-backend.onrender.com/images/faucets.jpg",
         description: "Install water-saving faucets and fixtures to reduce daily water waste.",
       },
     ],
@@ -41,16 +41,16 @@ const livingGuides = [
   {
     title: "🌱 Urban Gardening",
     description: "Bring nature into your home with simple and creative gardening ideas for small spaces.",
-    image: "http://10.0.2.2:4000/images/urbangardening.jpg",
+    image: "https://livingguide-backend.onrender.com/images/urbangardening.jpg",
     attractions: [
       {
         name: "Container Gardening",
-        image: "http://10.0.2.2:4000/images/containergardening.jpg",
+        image: "https://livingguide-backend.onrender.com/images/containergardening.jpg",
         description: "Learn how to grow flowers, vegetables, or herbs in pots and containers, perfect for balconies and patios.",
       },
       {
         name: "Herb Gardening",
-        image: "http://10.0.2.2:4000/images/herbgardening.jpg",
+        image: "https://livingguide-backend.onrender.com/images/herbgardening.jpg",
         description: "Enjoy fresh flavors by growing your own herbs at home for cooking and tea.",
       },
     ],
@@ -58,16 +58,16 @@ const livingGuides = [
   {
     title: "🍎 Healthy Eating",
     description: "Delicious ideas and practical tips for eating well, staying energized, and living healthier.",
-    image: "http://10.0.2.2:4000/images/healthyeating.jpg",
+    image: "https://livingguide-backend.onrender.com/images/healthyeating.jpg",
     attractions: [
       {
         name: "Balanced Diet Recipes",
-        image: "http://10.0.2.2:4000/images/balancediet.jpg",
+        image: "https://livingguide-backend.onrender.com/images/balancediet.jpg",
         description: "Step-by-step recipes that combine nutrients for tasty and wholesome meals.",
       },
       {
         name: "Superfoods",
-        image: "http://10.0.2.2:4000/images/superfoods.jpg",
+        image: "https://livingguide-backend.onrender.com/images/superfoods.jpg",
         description: "Explore nutrient-rich superfoods and how they boost energy, immunity, and overall health.",
       },
     ],
@@ -75,16 +75,16 @@ const livingGuides = [
   {
     title: "🏋️ Fitness & Exercise",
     description: "Fun and practical ways to stay active, boost energy, and improve overall health.",
-    image: "http://10.0.2.2:4000/images/fitness.jpg",
+    image: "https://livingguide-backend.onrender.com/images/fitness.jpg",
     attractions: [
       {
         name: "Home Workouts",
-        image: "http://10.0.2.2:4000/images/homeworkouts.jpg",
+        image: "https://livingguide-backend.onrender.com/images/homeworkouts.jpg",
         description: "Easy-to-follow routines you can do at home without needing special equipment.",
       },
       {
         name: "Outdoor Fitness",
-        image: "http://10.0.2.2:4000/images/outdoorfitness.jpg",
+        image: "https://livingguide-backend.onrender.com/images/outdoorfitness.jpg",
         description: "Enjoy fresh air while staying fit with activities like running, cycling, or yoga in the park.",
       },
     ],

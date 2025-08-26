@@ -10,5 +10,5 @@ const PORT = process.env.PORT || 4000;
 connectDb();
 
 app.listen(PORT, () => {
-  console.log(`LivingGuideApp server is running on http://localhost:${PORT}`);
+  console.log(`LivingGuideApp server is running on port ${PORT}`);
 });
