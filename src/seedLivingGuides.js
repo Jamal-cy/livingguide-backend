@@ -10,8 +10,53 @@ if (!MONGO_URI) {
   console.error("Error: MONGO_URI is not defined in your .env file");
   process.exit(1);
 }
-
 const livingGuides = [
+  {
+  title: "♻️ Waste Reduction Tracker",
+  description: "A feature to help users track their waste reduction efforts, including recycling habits, composting, and reducing single-use plastics.",
+  image: "https://livingguide-backend.onrender.com/images/WasteReduction.jpg",
+  attractions: [
+    {
+      name: "Recycling Habits",
+      image: "https://livingguide-backend.onrender.com/images/RecyclingHabits.jpg",
+      description: "Track and improve your recycling patterns to reduce household waste.",
+    },
+    {
+      name: "Composting Basics",
+      image: "https://livingguide-backend.onrender.com/images/CompostingBasics.jpg",
+      description: "Learn how composting turns organic waste into valuable fertilizer.",
+    },
+  ],
+},
+{
+  title: "📊 Sustainability Progress Dashboard",
+  description: "A personalized dashboard that tracks a user’s sustainable living progress over time. Users can see improvements in areas like waste reduction, carbon footprint, and sustainable purchasing habits.",
+  image: "https://livingguide-backend.onrender.com/images/SustainabilityDashboard.jpg",
+  attractions: [
+    {
+      name: "Progress Overview",
+      image: "https://livingguide-backend.onrender.com/images/ProgressOverview.jpg",
+      description: "View your overall progress across different sustainability areas.",
+    },
+    {
+      name: "Goal Tracking",
+      image: "https://livingguide-backend.onrender.com/images/GoalTracking.jpg",
+      description: "Set and monitor sustainability goals to stay motivated.",
+    },
+  ],
+},
+{
+  title: "🌍 Carbon Footprint Tracker",
+  description: "Users can input daily activities (e.g., transportation, energy usage, food consumption) to calculate their carbon footprint.",
+  image: "https://livingguide-backend.onrender.com/images/CarbonFootprint.jpg",
+  attractions: [
+    {
+      name: "Daily Impact Calculator",
+      image: "https://livingguide-backend.onrender.com/images/ImpactCalculator.jpg",
+      description: "Log your activities and instantly see your carbon impact.",
+    },
+  ],
+},
   {
     title: "☀️ Solar Energy",
     description: "Discover how solar power can reduce costs, cut emissions, and create clean energy for your home.",
