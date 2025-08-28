@@ -29,7 +29,7 @@ const livingGuides = [
   ],
 },
 {
-  title: "📊 Sustainability Progress Dashboard",
+  title: "📊 Progress Dashboard",
   description: "A personalized dashboard that tracks a user’s sustainable living progress over time. Users can see improvements in areas like waste reduction, carbon footprint, and sustainable purchasing habits.",
   image: "https://livingguide-backend.onrender.com/images/SustainabilityDashboard.jpg",
   attractions: [
